@@ -6,8 +6,6 @@ html, body {
     font-family: 'Roboto Condensed';
 }
 
-
-
 .navbar {
     background-color: paleturquoise;
     width: 100%;
@@ -23,6 +21,56 @@ html, body {
 
 .menu-item {
     text-decoration: none;
+}
+
+div[class^="square"] {
+    height: 10vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes bg-change {
+    to {
+        height: 4vh;
+        width: 50%;
+        margin: auto;
+    }
+}
+
+.square1 {
+    background: #ffa9a3;
+    animation-name: bg-change;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.square2 {
+    background: #4e82c2;
+    animation-name: bg-change;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+
+.square3 {
+    background: #4ec267;
+    animation-name: bg-change;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.square4 {
+    background: #f2fa87;
+    animation-name: bg-change;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
 }
 
 .title {
