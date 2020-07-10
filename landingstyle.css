@@ -52,4 +52,28 @@ body {
 
 /* DON'T TOUCH THIS! */
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-section {
+    animation: fade-in 3s 0s forwards;
+}
+
+#action-section {
+    visibility: hidden;
+    animation-name: fade-in;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: .8s;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0;}
+    100% { opacity: 1;
+        visibility: visible;}
+}
 /* Your goal is to arrange and animate the given landing page. The contents of the page should be centered both vertically and horizontally. On top of that, when the page loads, a fade-in animation should play that causes the title to fade in, shortly followed by the rest of the page content. Good luck! */
